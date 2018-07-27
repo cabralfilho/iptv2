@@ -2,7 +2,7 @@
 #!/bin/bash
 #
 apt-get update && apt-get upgrade -y
-apt-get install lsb-release nscd curl php php-mysql php-cli php-curl unzip -y && apt-get install php5-mcrypt &&  phpenmod mcrypt
+apt-get install lsb-release nscd curl php php-mysql php-cli php-curl unzip -y && apt-get install php-mcrypt &&  phpenmod mcrypt
 service apache2 restart
 wget http://downloads.sourceforge.net/project/iptv-md/xtream/www_dir.tar.gz -O /tmp/www_dir.tar.gz
 #
@@ -49,7 +49,7 @@ echo "Installationsdateien werden entfernt"
 echo " "
 rm /root/install_iptv_pro.php
 rm /root/install_iptv_pro.zip
-rm /root/xt_1.0.60-inst.sh
+rm /root/install.sh
 echo " "
 echo "####################################################################################"
 echo " "
