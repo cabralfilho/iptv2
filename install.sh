@@ -1,5 +1,10 @@
 #!/bin/bash
 #
+# edited by Iryadinata
+# Web: https://irtech.net
+# GitHub: https://github.com/irtec/
+#
+
 apt-get update && apt-get upgrade -y
 apt-get install lsb-release nscd curl php5 php5-mysql php5-cli php5-curl unzip -y && apt-get install php5-mcrypt &&  php5enmod mcrypt
 service apache2 restart
@@ -30,7 +35,7 @@ php install_iptv_pro.php
 echo " "
 echo "####################################################################################"
 echo " "
-echo "Die Lizenz wird nun installiert beide Fragen mit JA übernehmen !!!"
+echo "Lisensi sekarang diinstal untuk menerima kedua pertanyaan dengan YES !!!"
 echo " "
 echo 1 > /proc/sys/net/ipv4/ip_forward
 #
@@ -53,10 +58,11 @@ echo " "
 echo "####################################################################################"
 echo " "
 echo "Xtream Codes 1.0.60 edited by maxdata755 public Version"
+echo "Support by Iryadinata Pangkalanbun"
 echo " "
-echo "Installation abgeschlossen..."
+echo "Instalasi selesai..."
 echo " "
-echo "Der Server muss nun neu gestartet werden !!!"
+echo "Server sekarang harus direstart !!!"
 echo " "
       read -p "Reboot now (y/n)?" CONT
       if [ "$CONT" == "y" ] || [ "$CONT" == "Y" ]; then
